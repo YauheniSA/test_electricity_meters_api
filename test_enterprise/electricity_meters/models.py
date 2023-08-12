@@ -51,9 +51,9 @@ class CounterValue(CounterBaseModel):
         verbose_name='Показание счётчика',
     )
     timestamp = models.DateTimeField(
-        'Дата и время снятия показания',
-        default=datetime.now().strftime('%d.%m.%Y %H:%M:%S')
-    ),
+        verbose_name='Дата и время снятия показания',
+        auto_now_add=True
+    )
 
 
 class SimulateCounter(CounterBaseModel):

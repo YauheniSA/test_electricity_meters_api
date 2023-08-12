@@ -43,4 +43,7 @@ class CounterDataListViewSet(ListViewSet):
     queryset = CounterValue.objects.all()
     serializer_class = CounterShortSerializer
     filter_backends = (DjangoFilterBackend, )
-    filterset_fields = ('id', 'timestamp')
+    filterset_fields = {
+        'counter_id': ['exact', ],
+        'timestamp': ['gte', 'lte', 'exact']
+    }

@@ -24,7 +24,7 @@ CELERY_RESULT_SERIALIZER = "json"
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-w!sxhvp!a&1&%fhmnf%dtg-y!^$@y)l$!(+$yw7&rr7t^!o&ae'
-
+DATETIME_FORMAT = '%d-%m-%Y %H:%M:%S'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -114,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 

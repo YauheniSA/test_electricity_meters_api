@@ -11,7 +11,7 @@ class CounterAdmin(admin.ModelAdmin):
 @admin.register(CounterValue)
 class CounterValueAdmin(admin.ModelAdmin):
     list_display = ('counter', 'timestamp', 'A', 'kW')
-    list_filter = ('counter', 'A', 'kW')
+    list_filter = ('counter', 'A', 'kW', 'timestamp')
     search_fields = ('counter', 'timestamp')
 
 
